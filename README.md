@@ -21,7 +21,7 @@ Etter begrepet står siden det er forklart på i [JavaScript kompendiet](https:/
 3. Brukeren skal kunne vite hvor mange gjettninger hen har brukt til å finne frem til korrekt svar.
 4. Brukeren skal kunne restarte gjette-konkuransen.
 5. Brukeren skal kunne endre på maks og min verdien til intervallet.
-6. Brukeren skal få høre en (feil.mp3) når hen gjetter feil og en annen lyd (riktig.mp3) når hen gjetter riktig.
+6. Brukeren skal få høre en (feil.mp3) når hen gjetter feil og en annen lyd (riktig.mp3) når hen gjetter riktig. Les [her](https://www.w3schools.com/jsref/met_audio_play.asp) for å finne ut hvordan du styrer avspilling av lyd (audio-element) fra JS.
 7. Brukeren skal få en visuell respons på intervallet som tallet kan ligge i.  F eks at to vertikale streker markerer starten og sluttet på intervallet og disse forflytter seg innover med gjettningene.
 
 
