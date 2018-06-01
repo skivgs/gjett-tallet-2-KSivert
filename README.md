@@ -19,7 +19,10 @@ Etter begrepet står siden det er forklart på i [JavaScript kompendiet](https:/
 1. Brukeren skal få vite om tallet hen gjettet var for litet eller for stort,
 2. Brukeren skal få vite mellom hvilke tall det ukjente tallet ligger, og kan du oppdatere disse to tallene basert på brukerens tidligere gjetninger? (se punkt 1.)
 3. Brukeren skal kunne vite hvor mange gjettninger hen har brukt til å finne frem til korrekt svar.
-4. Kan du lage en knapp som restarter gjette-konkuransen?
-5. Hvordan kan du integrere Firebase i denne oppgaven?
+4. Brukeren skal kunne restarte gjette-konkuransen.
+5. Brukeren skal kunne endre på maks og min verdien til intervallet.
+6. Brukeren skal få høre en (feil.mp3) når hen gjetter feil og en annen lyd (riktig.mp3) når hen gjetter riktig.
+7. Brukeren skal få en visuell respons på intervallet som tallet kan ligge i.  F eks at to vertikale streker markerer starten og sluttet på intervallet og disse forflytter seg innover med gjettningene.
+
 
 
