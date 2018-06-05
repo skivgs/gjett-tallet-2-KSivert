@@ -21,20 +21,34 @@
             <button onclick="reset()"></button>
         </article>
     </main>
+
+    <audio id="audioFeil"><source src="lyder/feil.mp3" type="audio"></audio>
+    <audio id="audioRiktig"><source src="lyder/riktig.mp3" type="audio"></audio>
+
 <footer>
-    Gjett et tall er lagd av <i>A.H.</i>
+    Gjett et tall er lagd av <i>S.K.</i>
 </footer>
     <script>
         // Få tak på HTML-objekter
         var inpGjetting = document.getElementById("inpGjetting");
         var txtBeskjed = document.getElementById("txtBeskjed");
         var txtBeskjed2 = document.getElementById("txtBeskjed2");
+        var audioFeil = document.getElementById("audioFeil");
+        var audioRiktig = document.getElementById("audioRiktig");
        
         // Random tall 
         var korrektTall = Math.floor(Math.random() * 11);
 
         // tall
         var antallGanger = 0;
+
+
+        function audioF() {
+            audioFeil.play();
+        }
+        function audioR() {
+            audioRiktig.play();
+        }
 
 
         function teller() {
@@ -48,10 +62,13 @@
 
             if (korrektTall == gjettetTall) {
                 txtBeskjed.innerHTML = "Du gjettet riktig!";
+                audioR();
             } else if(korrektTall > gjettetTall) {
                 txtBeskjed.innerHTML = "Beklager, du gjettet for lavt";
+                audioF();
             } else if(korrektTall < gjettetTall)
                 txtBeskjed.innerHTML = "Beklager, du gjettet for høyt";
+                audioF();
 
         antallGanger++;
         
