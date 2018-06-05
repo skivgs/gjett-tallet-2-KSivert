@@ -44,6 +44,7 @@
 
 
         function audioF() {
+            console.log("JADA");
             audioFeil.play();
         }
         function audioR() {
@@ -66,19 +67,18 @@
             } else if(korrektTall > gjettetTall) {
                 txtBeskjed.innerHTML = "Beklager, du gjettet for lavt";
                 audioF();
-            } else if(korrektTall < gjettetTall)
+            } else {
                 txtBeskjed.innerHTML = "Beklager, du gjettet for høyt";
                 audioF();
+            }
+                
 
         antallGanger++;
         
         teller();
         }
 
-        function reset(){
-
-        }
-
+        // lage reset knapp
     </script>
 </body>
 </html>
